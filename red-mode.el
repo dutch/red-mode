@@ -3,7 +3,7 @@
 ;; Copyright (C) 2019 Chris Lamberson
 
 ;; Author: Chris Lamberson <chris@lamberson.online>
-;; Version: 0.1.0
+;; Version: 0.2.0
 ;; Url: https://github.com/dutch/red-mode
 ;; Keywords: languages
 ;; Package-Requires: ((emacs "25.0"))
@@ -25,10 +25,11 @@
 
 ;;; Commentary:
 ;;
+;; This file adds a major mode for the Red programming language.
 
 ;;; Code:
 
-(defgroup red-mode nil
+(defgroup red nil
   "Support for Red code."
   :link '(url-link "https://www.red-lang.org")
   :group 'languages)
@@ -36,7 +37,7 @@
 (defcustom red-indent-offset 4
   "Number of spaces per indent level."
   :type 'integer
-  :group 'red-mode)
+  :group 'red)
 
 (defvar red-mode-syntax-table
   (let ((table (make-syntax-table)))
