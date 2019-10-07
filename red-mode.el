@@ -40,6 +40,10 @@
 
 (defvar red-mode-syntax-table
   (let ((table (make-syntax-table)))
+	(modify-syntax-entry ?! "w" table)
+	(modify-syntax-entry ?? "w" table)
+	(modify-syntax-entry ?~ "w" table)
+	(modify-syntax-entry ?* "w" table)
 	table)
   "Syntax table for Red major mode.")
 
