@@ -30,7 +30,7 @@
 
 (defgroup red-mode nil
   "Support for Red code."
-  :link '(url-link "https://red-lang.org")
+  :link '(url-link "https://www.red-lang.org")
   :group 'languages)
 
 (defcustom red-indent-offset 4
